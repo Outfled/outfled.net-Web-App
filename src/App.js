@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+var title = document.querySelector('title');
+title.innerText = 'Outfled';
+
 function App() {
   return (
     <div className="App">
