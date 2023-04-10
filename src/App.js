@@ -1,4 +1,4 @@
-import logo from './logo (1).svg';
+import logo from './logo.jpg';
 import './App.css';
 
 var title = document.querySelector('title');
