@@ -10,12 +10,12 @@ function App() {
           In development.
         </p>
         <a
-          className="Link Tree"
+          className="App-link"
           href="https://linktr.ee/outfled"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Link Tree
         </a>
       </header>
     </div>
