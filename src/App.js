@@ -15,7 +15,7 @@ async function myFunc() {
     });
     return file;
 }
-const image = myFunc().file();
+const image = myFunc();
 
 function App() {
     return (
