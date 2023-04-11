@@ -8,6 +8,14 @@ Amplify.configure(awsconfig);
 var title = document.querySelector('title');
 title.innerText = 'Outfled';
 
+async function myFunc() {
+    const file = await Storage.get("640x800_21ee17ea-ab0a-44ca-8285-9cfd33a794f9.jpg", {
+        level: "public"
+    });
+    return file;
+}
+const image = myFunc();
+
 function App() {
     return (
         <div className="App">
@@ -18,7 +26,7 @@ function App() {
                 </p>
                 <a
                     className="App-link"
-                    href="https://linktr.ee/outfled"
+                    href={image}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
