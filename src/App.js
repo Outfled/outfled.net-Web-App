@@ -10,11 +10,12 @@ title.innerText = 'Outfled';
 
 async function myFunc() {
     const file = await Storage.get("640x800_21ee17ea-ab0a-44ca-8285-9cfd33a794f9.jpg", {
-        level: "public"
+        level: "public",
+        download: true
     });
     return file;
 }
-const image = myFunc();
+const image = myFunc().file();
 
 function App() {
     return (
