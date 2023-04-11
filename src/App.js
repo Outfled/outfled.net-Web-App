@@ -18,6 +18,7 @@ function GetUrl(){
 }
 
 function App() {
+    const image = GetUrl();
     return (
         <div className="App">
             <header className="App-header">
