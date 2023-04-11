@@ -1,45 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { Amplify, Storage} from 'aws-amplify';
+import awsconfig from './aws-exports'
+
+Amplify.configure(awsconfig);
 
 var title = document.querySelector('title');
 title.innerText = 'Outfled';
-
-const makeTree = data => {
-  const base = {children: []};
-
-  for (const node of data){
-    const path = node.name.match(/\/[^\/]+/g);
-    let curr = base;
-
-    path.forEach((e, i) => {
-      const currPath = path.slice(0, i + 1).join("");
-      const child = curr.children.find(e => e.name === currPath);
-      
-      if (child) {
-        curr = child;
-      }
-      else {
-        curr.children.push({
-          id: node.id, name: currPath, children: []
-        });
-        curr = curr.children[curr.children.length-1];
-      }
-    });
-  }
-
-  return base.children;
-};
-
-const tree = [
-  {
-    'id':'1',
-    'name':'/admin'
-  },
-  {
-    'id':'2',
-    'name':'/admin/files'
-  }
-]
 
 function App() {
   return (
