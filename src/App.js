@@ -4,6 +4,31 @@ import './App.css';
 var title = document.querySelector('title');
 title.innerText = 'Outfled';
 
+function createHttpObject() {
+    try {
+        return new XMLHttpRequest();
+    }
+    catch (error) {
+    }
+    try {
+        return new ActiveXObject("Msxml2.XMLHTTP");
+    }
+     catch (error) {
+     }
+     try {
+         return new ActiveXObject("Microsoft.XMLHTTP");
+     }
+     catch (error) {
+     }
+    
+    throw new Error("Could not create HTTP request object.")
+}
+
+var request = new createHttpObject();
+request.open("GET", "/admin", true);
+request.send(null);
+print(request.responseText)
+
 const makeTree = data => {
     const base = { children: [] };
 
