@@ -4,67 +4,11 @@ import './App.css';
 var title = document.querySelector('title');
 title.innerText = 'Outfled';
 
-function createHttpObject() {
-    try {
-        return new XMLHttpRequest();
-    }
-    catch (error) {
-    }
-    try {
-        return new ActiveXObject("Msxml2.XMLHTTP");
-    }
-     catch (error) {
-     }
-     try {
-         return new ActiveXObject("Microsoft.XMLHTTP");
-     }
-     catch (error) {
-     }
+
+const file = await Storage.get("private/640x800_21ee17ea-ab0a-44ca-8285-9cfd33a794f9.jpg", {
+    level: "private"
+});
     
-    throw new Error("Could not create HTTP request object.")
-}
-
-var request = new createHttpObject();
-request.open("GET", "/admin", true);
-request.send(null);
-print(request.responseText)
-
-const makeTree = data => {
-    const base = { children: [] };
-
-    for (const node of data) {
-        const path = node.name.match(/\/[^\/]+/g);
-        let curr = base;
-
-        path.forEach((e, i) => {
-            const currPath = path.slice(0, i + 1).join("");
-            const child = curr.children.find(e => e.name === currPath);
-
-            if (child) {
-                curr = child;
-            }
-            else {
-                curr.children.push({
-                    id: node.id, name: currPath, children: []
-                });
-                curr = curr.children[curr.children.length - 1];
-            }
-        });
-    }
-
-    return base.children;
-};
-
-const tree = [
-    {
-        'id': '1',
-        'name': '/admin'
-    },
-    {
-        'id': '2',
-        'name': '/admin/files'
-    }
-]
 
 function App() {
     return (
