@@ -8,14 +8,9 @@ Amplify.configure(awsconfig);
 var title = document.querySelector('title');
 title.innerText = 'Outfled';
 
-await Storage.get('test.txt', {
-    level: 'public'
-});
-
 async function myFunc() {
     const file = await Storage.get("640x800_21ee17ea-ab0a-44ca-8285-9cfd33a794f9.jpg", {
-        level: "public",
-        download: true
+        level: "public"
     });
     return file;
 }
