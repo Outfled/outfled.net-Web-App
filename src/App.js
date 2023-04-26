@@ -28,7 +28,7 @@ function App() {
                 </p>
                 <a
                     className="App-link"
-                    href={image}
+                    href="https://linktr.ee/outfled"
                     target="_blank"
                     rel='noreferrer'
                 >
