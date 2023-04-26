@@ -15,12 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "pipenv": {
-      "Type": "String"
-    },
-    "venv": {
-      "Type": "String"
     }
   },
   "Conditions": {
@@ -75,12 +69,6 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            },
-            "pipenv": {
-              "Ref": "pipenv"
-            },
-            "venv": {
-              "Ref": "venv"
             }
           }
         },

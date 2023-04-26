@@ -1,15 +1,6 @@
 {
   "permissions": {},
   "lambdaLayers": [],
-  "environmentVariableList": [
-    {
-      "cloudFormationParameterName": "pipenv",
-      "environmentVariableName": "pipenv"
-    },
-    {
-      "cloudFormationParameterName": "venv",
-      "environmentVariableName": "venv"
-    }
-  ],
+  "environmentVariableList": [],
   "secretNames": []
 }

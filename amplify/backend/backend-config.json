@@ -76,23 +76,7 @@
         }
       ]
     },
-    "AMPLIFY_function_AuthDiscordLambda_pipenv": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AuthDiscordLambda"
-        }
-      ]
-    },
     "AMPLIFY_function_AuthDiscordLambda_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AuthDiscordLambda"
-        }
-      ]
-    },
-    "AMPLIFY_function_AuthDiscordLambda_venv": {
       "usedBy": [
         {
           "category": "function",
