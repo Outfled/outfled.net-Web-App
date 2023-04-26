@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-outflednet-dev-33706-unauthRole",
       "StackName": "amplify-outflednet-dev-33706",
       "StackId": "arn:aws:cloudformation:us-east-2:766895356140:stack/amplify-outflednet-dev-33706/aa67c1b0-d83b-11ed-91ba-0acf7c7da9a5",
-      "AmplifyAppId": "d2s2jm0dd7rbmh"
+      "AmplifyAppId": "d2s2jm0dd7rbmh",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-outflednet-dev-33706-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
@@ -17,6 +18,15 @@
       },
       "storage": {
         "s3cc69e1a5": {}
+      },
+      "function": {
+        "outflednetab609c05": {
+          "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
+          "s3Key": "amplify-builds/outflednetab609c05-37475444744264615a65-build.zip"
+        }
+      },
+      "api": {
+        "clientapi1": {}
       }
     }
   }

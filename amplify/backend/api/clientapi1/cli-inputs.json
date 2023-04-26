@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/api/discord/clients": {
+      "name": "/api/discord/clients",
+      "lambdaFunction": "outflednetab609c05",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

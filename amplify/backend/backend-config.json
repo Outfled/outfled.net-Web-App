@@ -1,4 +1,20 @@
 {
+  "api": {
+    "clientapi1": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "outflednetab609c05"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "outfledFileStorage": {
       "customAuth": false,
@@ -28,6 +44,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "outflednetab609c05": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_outflednetab609c05_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "outflednetab609c05"
+        }
+      ]
+    },
+    "AMPLIFY_function_outflednetab609c05_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "outflednetab609c05"
+        }
+      ]
     }
   },
   "storage": {
