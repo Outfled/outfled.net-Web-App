@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const express   = require("express");
-const { port }  = require('./config.json');
+const express = require('express');
+const { port } = require('./config.json');
 
 const app = express();
-app.get('/api/discord/clients/', (request, response) => {
+app.get('/api/discord/clients', (request, response) => {
   return response.sendFile('index.html', { root: '.' });
 });
 
