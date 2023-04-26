@@ -28,7 +28,7 @@
           "pipenv": "C:\\Users\\Jalen\\AppData\\Roaming\\Python\\Python310\\Scripts\\",
           "venv": "C:\\Users\\Jalen\\AppData\\Roaming\\Python\\Python310\\Scripts\\",
           "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
-          "s3Key": "amplify-builds/AuthDiscordLambda-7a336f6a425766766348-build.zip"
+          "s3Key": "amplify-builds/AuthDiscordLambda-4775535265756a394535-build.zip"
         }
       },
       "api": {
