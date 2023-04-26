@@ -1,0 +1,10 @@
+[
+    { 
+        "id"  : "1094748457576697986",
+        "url" : "https://discord.com/api/oauth2/authorize?client_id=1094748457576697986&redirect_uri=https%3A%2F%2Foutfled.net%2Fapi%2Fdiscord%2Fclients&response_type=code&scope=identify%20rpc%20activities.read%20activities.write%20rpc.activities.write"
+    },
+    {
+        "id"  : "1095068590769717418",
+        "url" : "https://discord.com/api/oauth2/authorize?client_id=1095068590769717418&redirect_uri=http%3A%2F%2Foutfled.net%2Fapi%2Fdiscord%2Fclients&response_type=code&scope=identify%20rpc%20rpc.activities.write%20activities.read%20activities.write"
+    }
+]

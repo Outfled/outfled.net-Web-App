@@ -13,6 +13,13 @@
           "delete"
         ]
       }
+    },
+    "/auth/discord": {
+      "name": "/auth/discord",
+      "lambdaFunction": "AuthDiscordLambda",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
