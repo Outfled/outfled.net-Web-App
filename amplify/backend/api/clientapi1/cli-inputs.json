@@ -14,8 +14,8 @@
         ]
       }
     },
-    "/auth/discord": {
-      "name": "/auth/discord",
+    "/auth/discordapps": {
+      "name": "/auth/discordapps",
       "lambdaFunction": "AuthDiscordLambda",
       "permissions": {
         "setting": "open"
