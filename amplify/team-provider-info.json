@@ -18,12 +18,6 @@
       },
       "storage": {
         "s3cc69e1a5": {}
-      },
-      "function": {
-        "outflednetab609c05": {
-          "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
-          "s3Key": "amplify-builds/outflednetab609c05-37475444744264615a65-build.zip"
-        }
       }
     }
   }
