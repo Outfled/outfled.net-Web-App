@@ -23,14 +23,7 @@
         "outflednetab609c05": {
           "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
           "s3Key": "amplify-builds/outflednetab609c05-37475444744264615a65-build.zip"
-        },
-        "AuthDiscordLambda": {
-          "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
-          "s3Key": "amplify-builds/AuthDiscordLambda-54566d3466567a4d7841-build.zip"
         }
-      },
-      "api": {
-        "clientapi1": {}
       }
     }
   }

@@ -1,28 +1,5 @@
 {
-  "api": {
-    "clientapi1": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "outflednetab609c05"
-        },
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "AuthDiscordLambda"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    }
-  },
+  "api": {},
   "auth": {
     "outfledFileStorage": {
       "customAuth": false,
@@ -55,12 +32,6 @@
     }
   },
   "function": {
-    "AuthDiscordLambda": {
-      "build": true,
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "outflednetab609c05": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -68,22 +39,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_AuthDiscordLambda_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AuthDiscordLambda"
-        }
-      ]
-    },
-    "AMPLIFY_function_AuthDiscordLambda_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "AuthDiscordLambda"
-        }
-      ]
-    },
     "AMPLIFY_function_outflednetab609c05_deploymentBucketName": {
       "usedBy": [
         {
