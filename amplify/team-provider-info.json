@@ -18,6 +18,15 @@
       },
       "storage": {
         "s3cc69e1a5": {}
+      },
+      "function": {
+        "outflednetlambda": {
+          "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
+          "s3Key": "amplify-builds/outflednetlambda-51536e3735563950372b-build.zip"
+        }
+      },
+      "api": {
+        "outfledapi": {}
       }
     }
   }
