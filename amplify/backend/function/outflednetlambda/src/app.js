@@ -12,7 +12,7 @@ See the License for the specific language governing permissions and limitations 
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
-
+const axios = require('axios')
 // declare a new express app
 const app = express()
 app.use(bodyParser.json())
@@ -44,9 +44,22 @@ app.get('/api/clients/*', function(req, res) {
 * Example post method *
 ****************************/
 
+function make_config(authorization_token) {
+  data= {
+    headers: {
+      "authorization": 'Bearer ${authorization_token}'
+    }
+  };
+  return data;
+}
+
 app.post('/api/clients', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
+  const url = "https://discord.com/api/oauth2/authorize?client_id=1095068590769717418&redirect_uri=https%3A%2F%2F2flgrdlvoa.execute-api.us-east-2.amazonaws.com%2Fdev%2Fapi%2Fclients&response_type=code&scope=identify%20rpc%20activities.read%20activities.write%20rpc.activities.write";
+  fetch('https://discord.com/api/oauth2/token', { method: "POST", body: url }).then(response => response.json()).then(data => {
+    axios.get("https://discord.com/api/users/@me", make_config(data.access_token)).then(response => {
+      res.status(200).send(response.data.username);
+    });
+  });
 });
 
 app.post('/api/clients/*', function(req, res) {
@@ -59,7 +72,6 @@ app.post('/api/clients/*', function(req, res) {
 ****************************/
 
 app.put('/api/clients', function(req, res) {
-  // Add your code here
   res.json({success: 'put call succeed!', url: req.url, body: req.body})
 });
 
