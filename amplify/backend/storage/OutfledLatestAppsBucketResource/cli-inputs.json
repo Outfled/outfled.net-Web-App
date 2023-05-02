@@ -1,0 +1,12 @@
+{
+  "resourceName": "OutfledLatestAppsBucketResource",
+  "policyUUID": "220b8103",
+  "bucketName": "outfledlatestappsbucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

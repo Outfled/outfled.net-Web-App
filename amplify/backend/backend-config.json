@@ -72,5 +72,11 @@
       ]
     }
   },
-  "storage": {}
+  "storage": {
+    "OutfledLatestAppsBucketResource": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
 }

@@ -24,6 +24,9 @@
       },
       "api": {
         "outfledapi": {}
+      },
+      "storage": {
+        "OutfledLatestAppsBucketResource": {}
       }
     }
   }
