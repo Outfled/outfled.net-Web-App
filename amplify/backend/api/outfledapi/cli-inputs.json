@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/builds/get-latest": {
+      "name": "/builds/get-latest",
+      "lambdaFunction": "outflednetlambda",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

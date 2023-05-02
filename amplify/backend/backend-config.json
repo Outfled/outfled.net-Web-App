@@ -49,7 +49,15 @@
   "function": {
     "outflednetlambda": {
       "build": true,
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "BucketName"
+          ],
+          "category": "storage",
+          "resourceName": "OutfledLatestAppsBucketResource"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
