@@ -16,13 +16,10 @@
       "auth": {
         "outfledFileStorage": {}
       },
-      "storage": {
-        "s3cc69e1a5": {}
-      },
       "function": {
         "outflednetlambda": {
           "deploymentBucketName": "amplify-outflednet-dev-33706-deployment",
-          "s3Key": "amplify-builds/outflednetlambda-51536e3735563950372b-build.zip"
+          "s3Key": "amplify-builds/outflednetlambda-784f4277796463526945-build.zip"
         }
       },
       "api": {
